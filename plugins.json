@@ -1,12 +1,12 @@
 [{
   "projectUrl": "https://discord.gg/DDY8Tr2a",
   "provider": "lucid-soft",
-  "name": "Lucid Custom Prayers",
-  "description": "Set up auto prayers based on various event IDs",
-  "id": "lucidcustomprayers-plugin",
+  "name": "Auto Log Hop",
+  "description": "Auto logs and hops for you <3",
+  "id": "autologhop-plugin",
   "releases": [{
     "date": "2024-02-03",
-    "sha512sum": "B46800002B8CE366B34E86B968E02B882B6E9C95AC820264523FB9AEEAEE5DF1B41325D7F97DB9C67B5509EB4A7112C4A3CB8F724AAE95DF02721B43933E37E1",
+    "sha512sum": "4C347EEEFF805E7868A3E4187E62AFF1AADD9520F65DCE4F7CDDFD082CA520FABF02DAF8B8BDF5094E88C7B5EA2692349F7B07E1BF32793B99002F59FFAD85C1",
     "version": "2.1.4",
     "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/auto-log-hop-2.1.4.jar?raw=true",
     "requires": "^1.0.0"
@@ -21,7 +21,7 @@
     "date": "2024-02-03",
     "sha512sum": "B1612F0ABA6655C1BB215CDDFE5A2CBED03CC8C24E8B670122A370C67C5952B16EDE0CD3E8EA553757DBE9EB8C7F56C3DBA7A1CDA31B374C5104E3F989AE89E2",
     "version": "2.1.4",
-    "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-custom-prayers-2.1.4.jar?raw=true",
+    "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/auto-log-hop-2.1.4.jar?raw=true",
     "requires": "^1.0.0"
   }]
 }, {
