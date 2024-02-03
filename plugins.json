@@ -5,10 +5,10 @@
   "description": "Auto logs and hops for you <3",
   "id": "autologhop-plugin",
   "releases": [{
-    "date": "2024-02-03",
-    "sha512sum": "CE377DBD151BAFFA4F284844C812540E1BD5FD15108823B54A49F732C5D9C720CD3E885306A1115285101FF5FB72ECE853BAD46A8BC7788C06EDC7CE660B8B9F",
-    "version": "2.1.4",
-    "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/auto-log-hop-2.1.4.jar?raw=true",
+    "date": "2024-02-04",
+    "sha512sum": "20E5C2144F12F8D112043DA4EDA3EA6778517CCB1CB0DCAEC75C473EB2D12908AD69C44446029BB185AEAD05DAF76F5005BE9B619273919496FF3127250A032D",
+    "version": "1.0.0",
+    "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/auto-log-hop-1.0.0.jar?raw=true",
     "requires": "^1.0.0"
   }]
 }, {
@@ -18,10 +18,10 @@
   "description": "Set up auto prayers based on various event IDs",
   "id": "lucidcustomprayers-plugin",
   "releases": [{
-    "date": "2024-02-03",
+    "date": "2024-02-04",
     "sha512sum": "B1612F0ABA6655C1BB215CDDFE5A2CBED03CC8C24E8B670122A370C67C5952B16EDE0CD3E8EA553757DBE9EB8C7F56C3DBA7A1CDA31B374C5104E3F989AE89E2",
     "version": "2.1.4",
-    "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/auto-log-hop-2.1.4.jar?raw=true",
+    "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-custom-prayers-2.1.4.jar?raw=true",
     "requires": "^1.0.0"
   }]
 }, {
@@ -31,7 +31,7 @@
   "description": "Disabled rendering graphics on the client while plugin is enabled.",
   "id": "luciddisablerendering-plugin",
   "releases": [{
-    "date": "2024-02-03",
+    "date": "2024-02-04",
     "sha512sum": "78511C713A3402934DA90CBA753392848EBD4447CEC8EC9BECE47DDE0C3229D9C888FEA6C1D0B8F1D3010EC18E83BE384480C3DEB3BE65B6970E346D0FF44053",
     "version": "1.0.1",
     "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-disable-rendering-1.0.1.jar?raw=true",
@@ -44,7 +44,7 @@
   "description": "A plugin that sends various messages to a specified Discord webhook URL",
   "id": "luciddiscordlogger-plugin",
   "releases": [{
-    "date": "2024-02-03",
+    "date": "2024-02-04",
     "sha512sum": "4D87F8827E2F9E96E2D4CACAB80B57E5439C35163BFE1FC3C8EE74735B50C3F31E91D1811386CA6C2CF2654CBD57B1342966A51260E58DF944BE6AE3A4280EED",
     "version": "1.0.3",
     "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-discord-logger-1.0.3.jar?raw=true",
@@ -57,7 +57,7 @@
   "description": "Gauntlet Extended by xKylee updated with auto-features for Hunllef added in.",
   "id": "lucidgauntlet-plugin",
   "releases": [{
-    "date": "2024-02-03",
+    "date": "2024-02-04",
     "sha512sum": "F15562E48D69C8975279A422A2D8126EE6EED1B0A75395963EB5F09BD9D735728F37F1E5525A2E49A54F380D18E961E5A46E812F4C00759FE978538A5B5C13A1",
     "version": "6.2.4",
     "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-gauntlet-6.2.4.jar?raw=true",
@@ -70,7 +70,7 @@
   "description": "Set-up up an unlimited amount of custom gear swaps with customizable hotkeys or trigger them via weapon equip",
   "id": "lucidgearswapper-plugin",
   "releases": [{
-    "date": "2024-02-03",
+    "date": "2024-02-04",
     "sha512sum": "E71BA6CD69810DD44633F942908A05F810BDC447FE1EE3FB11F73F9F05025AB50A3E0B830F9B4CA2110C2E2F084744DA9C94AA6B86557CF042E07C5B612BC707",
     "version": "2.2.8",
     "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-gear-swapper-2.2.8.jar?raw=true",
@@ -83,7 +83,7 @@
   "description": "Helper plugin for the Phantom Muspah",
   "id": "lucidmuspah-plugin",
   "releases": [{
-    "date": "2024-02-03",
+    "date": "2024-02-04",
     "sha512sum": "1DB9874C7F330561206D857BDEB7DD1E25F3D4B8BE3879660E7ABB37A2C32DF9057B283902490E29DAC74E430313ECC532C392783332D1AC7984933D56C29C31",
     "version": "1.0.4",
     "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-muspah-1.0.4.jar?raw=true",
@@ -96,7 +96,7 @@
   "description": "A plugin to help you gather spices for stews and not kill your cat in the process",
   "id": "lucidspices-plugin",
   "releases": [{
-    "date": "2024-02-03",
+    "date": "2024-02-04",
     "sha512sum": "74364A412BF6A8A3C58EF15FA130C00D0C403D672BE6997C4FB200BBCC4085ED509B6D9F226426D3057B7C55FFF8E0D618AE9C82190C42F418E0A85388F48375",
     "version": "1.0.2",
     "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-spices-1.0.2.jar?raw=true",

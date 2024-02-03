@@ -126,7 +126,8 @@ public class AutoLogHop extends Plugin
     @Subscribe
     public void onPlayerSpawned(PlayerSpawned event)
     {
-        if (isPlayerBad(event.getPlayer())) handleAction();
+        if (isPlayerBad(event.getPlayer()))
+            handleAction();
     }
 
     private boolean nearPlayer()
@@ -134,7 +135,8 @@ public class AutoLogHop extends Plugin
         List<Player> players = client.getPlayers();
         for (Player p : players)
         {
-            if (!isPlayerBad(p)) continue;
+            if (!isPlayerBad(p))
+                continue;
             return true;
         }
         return false;
@@ -165,9 +167,11 @@ public class AutoLogHop extends Plugin
         {
             case ROYAL_SEED_POD:
                 //can't use royal seed pod above lv 30 wilderness.
-                if (PvPUtil.getWildernessLevelFrom(client.getLocalPlayer().getWorldLocation()) > 30) return;
+                if (PvPUtil.getWildernessLevelFrom(client.getLocalPlayer().getWorldLocation()) > 30)
+                    return;
                 Widget inventory = client.getWidget(WidgetInfo.INVENTORY);
-                if (inventory == null) return;
+                if (inventory == null)
+                    return;
                 Collection<Widget> items = Arrays.asList(inventory.getDynamicChildren());
                 Optional<Widget> itemCheck = items.stream().filter(widgetItem -> widgetItem.getItemId() == ItemID.ROYAL_SEED_POD).findFirst();
                 if (itemCheck.isPresent())
@@ -178,11 +182,13 @@ public class AutoLogHop extends Plugin
                 break;
             case ROW_GRAND_EXCHANGE:
                 //can't use ring of wealth above lv 30 wilderness.
-                if (PvPUtil.getWildernessLevelFrom(client.getLocalPlayer().getWorldLocation()) > 30) return;
+                if (PvPUtil.getWildernessLevelFrom(client.getLocalPlayer().getWorldLocation()) > 30)
+                    return;
                 //not as janky as inventory items kek
                 Widget equipment = client.getWidget(WidgetInfo.EQUIPMENT_RING);
                 ItemContainer container = client.getItemContainer(InventoryID.EQUIPMENT);
-                if (equipment == null) return;
+                if (equipment == null)
+                    return;
                 //don't attempt to tele if we don't have a ring lol
                 if (container != null && Arrays.stream(container.getItems()).noneMatch(item -> client.getItemDefinition(item.getId()).getName().toLowerCase().contains("ring of wealth (")))
                     return;
@@ -199,15 +205,20 @@ public class AutoLogHop extends Plugin
 
     private boolean isPlayerBad(Player player)
     {
-        if (player == client.getLocalPlayer()) return false;
+        if (player == client.getLocalPlayer())
+            return false;
 
-        if (isInWhitelist(player.getName())) return false;
+        if (isInWhitelist(player.getName()))
+            return false;
 
-        if (config.combatRange() && !PvPUtil.isAttackable(client, player)) return false;
+        if (config.combatRange() && !PvPUtil.isAttackable(client, player))
+            return false;
 
-        if (config.skulledOnly() && !isPlayerSkulled(player)) return false;
+        if (config.skulledOnly() && !isPlayerSkulled(player))
+            return false;
 
-        if (!passedWildernessChecks()) return false;
+        if (!passedWildernessChecks())
+            return false;
 
         return true;
     }
@@ -215,14 +226,26 @@ public class AutoLogHop extends Plugin
     private int getValidWorld()
     {
         WorldResult result = worldService.getWorlds();
-        if (result == null) return -1;
+        System.out.println("hello sir" + result);
+        if (result == null)
+            return -1;
         List<World> worlds = result.getWorlds();
         Collections.shuffle(worlds);
         for (World w : worlds)
         {
-            if (client.getWorld() == w.getId()) continue;
+            if (client.getWorld() == w.getId())
+                continue;
 
-            if (w.getTypes().contains(net.runelite.http.api.worlds.WorldType.HIGH_RISK) || w.getTypes().contains(net.runelite.http.api.worlds.WorldType.DEADMAN) || w.getTypes().contains(net.runelite.http.api.worlds.WorldType.PVP) || w.getTypes().contains(net.runelite.http.api.worlds.WorldType.SKILL_TOTAL) || w.getTypes().contains(net.runelite.http.api.worlds.WorldType.BOUNTY) || w.getTypes().contains(net.runelite.http.api.worlds.WorldType.SEASONAL) || w.getTypes().contains(net.runelite.http.api.worlds.WorldType.BETA_WORLD) || w.getTypes().contains(net.runelite.http.api.worlds.WorldType.QUEST_SPEEDRUNNING) || w.getTypes().contains(net.runelite.http.api.worlds.WorldType.FRESH_START_WORLD) || w.getTypes().contains(net.runelite.http.api.worlds.WorldType.PVP_ARENA) || config.membersWorlds() != w.getTypes().contains(net.runelite.http.api.worlds.WorldType.MEMBERS))
+            if (w.getTypes().contains(net.runelite.http.api.worlds.WorldType.HIGH_RISK) ||
+                    w.getTypes().contains(net.runelite.http.api.worlds.WorldType.DEADMAN) ||
+                    w.getTypes().contains(net.runelite.http.api.worlds.WorldType.PVP) ||
+                    w.getTypes().contains(net.runelite.http.api.worlds.WorldType.SKILL_TOTAL) ||
+                    w.getTypes().contains(net.runelite.http.api.worlds.WorldType.BOUNTY) ||
+                    w.getTypes().contains(net.runelite.http.api.worlds.WorldType.SEASONAL) ||
+                    w.getTypes().contains(net.runelite.http.api.worlds.WorldType.PVP_ARENA) ||
+                    w.getTypes().contains(net.runelite.http.api.worlds.WorldType.FRESH_START_WORLD) ||
+                    w.getTypes().contains(net.runelite.http.api.worlds.WorldType.QUEST_SPEEDRUNNING) ||
+                    config.membersWorlds() != w.getTypes().contains(net.runelite.http.api.worlds.WorldType.MEMBERS))
                 continue;
             return w.getId();
         }
@@ -272,7 +295,8 @@ public class AutoLogHop extends Plugin
                 }
                 injector.getInstance(ClientThread.class).invokeLater(() ->
                 {
-                    if (client.getWidget(WidgetInfo.WORLD_SWITCHER_LIST) != null) client.hopToWorld(rsWorld);
+                    if (client.getWidget(WidgetInfo.WORLD_SWITCHER_LIST) != null)
+                        client.hopToWorld(rsWorld);
                 });
             });
         }
@@ -301,7 +325,14 @@ public class AutoLogHop extends Plugin
         {
             return;
         }
-        client.invokeMenuAction("Logout", "", 1, MenuAction.CC_OP.getId(), -1, param1);
+        client.invokeMenuAction(
+                "Logout",
+                "",
+                1,
+                MenuAction.CC_OP.getId(),
+                -1,
+                param1
+        );
     }
 
     public boolean inWilderness()
@@ -316,13 +347,15 @@ public class AutoLogHop extends Plugin
 
         for (String whitelisted : names)
         {
-            if (whitelisted.isBlank() || whitelisted.isEmpty() || whitelisted.equals("_")) continue;
+            if (whitelisted.isBlank() || whitelisted.isEmpty() || whitelisted.equals("_"))
+                continue;
 
             //remove trailing whitespace on names.
             //if (whitelisted.charAt(whitelisted.length() - 1) == ' ')
             //	whitelisted = whitelisted.substring(0, whitelisted.length() - 1);
 
-            if (whitelisted.equals(username)) return true;
+            if (whitelisted.equals(username))
+                return true;
         }
         return false;
     }
@@ -363,7 +396,10 @@ public class AutoLogHop extends Plugin
 
     private void keyEvent(int id, int key)
     {
-        KeyEvent e = new KeyEvent(client.getCanvas(), id, System.currentTimeMillis(), 0, key, KeyEvent.CHAR_UNDEFINED);
+        KeyEvent e = new KeyEvent(
+                client.getCanvas(), id, System.currentTimeMillis(),
+                0, key, KeyEvent.CHAR_UNDEFINED
+        );
         client.getCanvas().dispatchEvent(e);
     }
 
