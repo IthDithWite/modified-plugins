@@ -29,12 +29,9 @@ include("lucid-gauntlet")
 include("lucid-gear-swapper")
 include("lucid-muspah")
 include("lucid-custom-prayers")
-include("lucid-example-plugin")
 include("lucid-spices")
-include("lucid-cannon-reloader")
 include("lucid-disable-rendering")
 include("lucid-discord-logger")
-include("lucid-hotkeys")
 
 for (project in rootProject.children) {
     project.apply {
@@ -45,3 +42,4 @@ for (project in rootProject.children) {
         require(buildFile.isFile) { "Project '${project.path} must have a $buildFile build script" }
     }
 }
+include("auto-log-hop")

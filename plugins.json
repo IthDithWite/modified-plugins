@@ -1,14 +1,14 @@
 [{
   "projectUrl": "https://discord.gg/DDY8Tr2a",
   "provider": "lucid-soft",
-  "name": "Lucid Cannon Reloader",
-  "description": "A plugin that will reload your cannon so you don't have to",
-  "id": "lucidcannonreloader-plugin",
+  "name": "Lucid Custom Prayers",
+  "description": "Set up auto prayers based on various event IDs",
+  "id": "lucidcustomprayers-plugin",
   "releases": [{
     "date": "2024-02-03",
-    "sha512sum": "78C4FBB5BF133B4335EC61A064FEFE9658DC8D6C78B9D8B1448BAA3D1E7CD38A1C98DC62B839C843D45D4E13CDAB8C393A2AF29ABACC6FA3713D80CD098DD2BD",
-    "version": "1.0.5",
-    "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-cannon-reloader-1.0.5.jar?raw=true",
+    "sha512sum": "B46800002B8CE366B34E86B968E02B882B6E9C95AC820264523FB9AEEAEE5DF1B41325D7F97DB9C67B5509EB4A7112C4A3CB8F724AAE95DF02721B43933E37E1",
+    "version": "2.1.4",
+    "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/auto-log-hop-2.1.4.jar?raw=true",
     "requires": "^1.0.0"
   }]
 }, {
@@ -53,19 +53,6 @@
 }, {
   "projectUrl": "https://discord.gg/DDY8Tr2a",
   "provider": "lucid-soft",
-  "name": "Lucid Example",
-  "description": "An example plugin that can be copied to use as a plugin skeleton. Does nothing functionally.",
-  "id": "lucidexample-plugin",
-  "releases": [{
-    "date": "2024-02-03",
-    "sha512sum": "FD60B4F088EBB919EEBF0E3169039F18C12F83B6CB12AB771B99BF19C07DC75831C395E3FFCCF3CB60EC0A7371B9FB9BC459EBBC06CBA7BB8CEFCDB2D1C41384",
-    "version": "1.0.1",
-    "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-example-plugin-1.0.1.jar?raw=true",
-    "requires": "^1.0.0"
-  }]
-}, {
-  "projectUrl": "https://discord.gg/DDY8Tr2a",
-  "provider": "lucid-soft",
   "name": "Lucid Gauntlet",
   "description": "Gauntlet Extended by xKylee updated with auto-features for Hunllef added in.",
   "id": "lucidgauntlet-plugin",
@@ -87,19 +74,6 @@
     "sha512sum": "E71BA6CD69810DD44633F942908A05F810BDC447FE1EE3FB11F73F9F05025AB50A3E0B830F9B4CA2110C2E2F084744DA9C94AA6B86557CF042E07C5B612BC707",
     "version": "2.2.8",
     "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-gear-swapper-2.2.8.jar?raw=true",
-    "requires": "^1.0.0"
-  }]
-}, {
-  "projectUrl": "https://discord.gg/DDY8Tr2a",
-  "provider": "lucid-soft",
-  "name": "Lucid Hotkeys",
-  "description": "Setup hotkeys that can do a variety of different actions.",
-  "id": "lucidhotkeys-plugin",
-  "releases": [{
-    "date": "2024-02-03",
-    "sha512sum": "97B382394D5BD1EF0CE4648728E21989FEA8E9ECCA4C67E4AA6165727617A2911C06EAE9455A2FE21686F1E62DD0E5DD0D0E1EED547FBBCF0F3DB227672CE3EE",
-    "version": "1.1.9",
-    "url": "https://github.com/lucid-plugins/public-plugins/blob/master/release/lucid-hotkeys-1.1.9.jar?raw=true",
     "requires": "^1.0.0"
   }]
 }, {
