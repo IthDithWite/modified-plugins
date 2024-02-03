@@ -1,4 +1,4 @@
-version = "2.1.4"
+version = "1.0.0"
 
 project.extra["PluginName"] = "Auto Log Hop"
 project.extra["PluginDescription"] = "Auto logs and hops for you <3"
